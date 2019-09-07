@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>edadHeroes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ul type="circle" *ngFor='let heroes of data.members'>
+        <span *ngIf='heroes.age > 30'>
+      
+      <li>{{heroes.name}}</li>
+      <li>{{heroes.powers}}</li>
+    </span>
+    </ul>
+</ion-content>
